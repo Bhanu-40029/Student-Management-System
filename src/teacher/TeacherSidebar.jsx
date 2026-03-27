@@ -7,7 +7,7 @@ function TeacherSidebar() {
       <Link to="/teacher/profile">Profile</Link>
       <Link to="/teacher/students">Students</Link>
       <Link to="/teacher/attendance">Attendance</Link>
-      
+       <Link to="/teacher/assignments">Timetable</Link>
       <Link to="/teacher/announcements">Announcements</Link>
     </div>
   );
