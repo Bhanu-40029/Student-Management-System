@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../auth/api";
 import TeacherLayout from "./TeacherLayout";
 
-function TeacherTimetable({ user }) {
+function TeacherTimeTable({ user }) {
   const storedUser = JSON.parse(localStorage.getItem("user"));
   const currentUser = user || storedUser;
 
@@ -57,4 +57,4 @@ function TeacherTimetable({ user }) {
   );
 }
 
-export default TeacherTimetable;
+export default TeacherTimeTable;
