@@ -1,0 +1,666 @@
+/* 💜 HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+/* 🏷 TITLE */
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 👤 USER SECTION */
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+/* 🌟 FULL SCREEN CENTER */
+.login-wrapper {
+   min-height: calc(100vh - 120px);                
+  display: flex;
+  justify-content: center;      
+  align-items: center;         
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe); /* theme bg */
+}
+
+/* 💎 LOGIN CARD */
+.login-card {
+  width: 320px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.2);
+  text-align: center;
+}
+
+/* 💜 TITLE */
+.login-card h2 {
+  margin-bottom: 15px;
+  color: #6a11cb;
+}
+
+/* ✍ INPUTS */
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* ✨ INPUT FOCUS */
+.login-card input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+/* 🔘 BUTTON */
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🔥 BUTTON HOVER */
+.login-card button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* ✨ FOCUS EFFECT */
+.login-card input:focus,
+.login-card select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+}
+
+/* student module */
+/* 💜 MAIN BACKGROUND */
+.dashboard-container {
+  padding: 25px;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  min-height: 100vh;
+}
+
+/* 💜 WELCOME BOX */
+.welcome-box {
+ background: linear-gradient(135deg, #6a11cb, #d56ddb) !important;
+  color: white !important;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.35);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.welcome-box:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+.welcome-box h2 {
+  color: white !important;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.welcome-box p {
+  color: white !important;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* 📊 GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+/* 💎 STAT CARD */
+.stat-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ TOP GLOW LINE */
+.stat-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #6a11cb, #d56ddb);
+}
+
+/* 🔥 HOVER EFFECT */
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(106, 17, 203, 0.25);
+}
+
+/* 🎯 TEXT */
+.stat-card h3 {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a11cb;
+}
+
+/* 📢 ANNOUNCEMENTS */
+.announcement-box {
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.announcement-box h3 {
+  color: #6a11cb;
+  margin-bottom: 12px;
+}
+
+/* 📌 ITEMS */
+.announcement-box p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f3e8ff;
+  transition: 0.2s;
+}
+
+/* ✨ HOVER */
+.announcement-box p:hover {
+  background: #e9d5ff;
+  color: #6a11cb;
+  transform: translateX(6px);
+  cursor: pointer;
+}
+
+/* 🌟 HEADER MATCH */
+.header {
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+}
+/* student profile */
+/* 💜 PROFILE TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+/* 💎 PROFILE GRID CONTAINER */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 25px;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.15);
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 🧊 PROFILE CARDS */
+.profile-grid div {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+/* ✨ HOVER EFFECT */
+.profile-grid div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(106, 17, 203, 0.2);
+}
+
+/* 🎯 LABEL */
+.profile-grid strong {
+  color: #6a11cb;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Student timetable */
+/* 💜 TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6a11cb;
+  font-weight: 600;
+}
+
+/* 📊 TABLE CONTAINER */
+.timetable-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(106, 17, 203, 0.2);
+  background: white;
+}
+
+/* 💜 HEADER */
+
+.timetable-table thead  th {
+  background: linear-gradient(135deg, #6a11cb, #d56ddb) !important;
+  color: white;
+}
+
+.timetable-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* 📄 BODY */
+.timetable-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+/* ✨ ROW HOVER */
+.timetable-table tbody tr {
+  transition: 0.3s;
+}
+
+.timetable-table tbody tr:hover {
+  background: #f3e8ff;
+  transform: scale(1.01);
+}
+
+/* 🎯 LAST ROW FIX */
+.timetable-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  .timetable-table {
+    font-size: 12px;
+  }
+}
+.timetable-table td:nth-child(2) {
+  color: #6a11cb;
+  font-weight: 500;
+}
+/* Results */
+/* 💜 RESULT TITLE */
+.result-title {
+  text-align: center;
+  color: #6a11cb;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 📄 RESULT INFO */
+.result-info {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(106, 17, 203, 0.15);
+}
+
+.result-info p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* 📊 TABLE */
+.result-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.2);
+}
+
+/* 💜 HEADER FIX */
+.result-table thead tr th {
+  background: linear-gradient(135deg, #6a11cb, #d56ddb) !important;
+  color: white;
+  padding: 14px;
+}
+
+/* 📄 BODY */
+.result-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ✨ ROW HOVER */
+.result-table tbody tr:hover {
+  background: #f3e8ff;
+  transform: scale(1.01);
+}
+
+/* 🎯 SUBJECT COLOR */
+.result-table td:nth-child(2) {
+  color: #6a11cb;
+  font-weight: 500;
+}
+
+/* 🟢 GRADE COLORS */
+.result-table td:nth-child(3) {
+  font-weight: bold;
+}
+
+.result-table td:nth-child(3):contains("O") {
+  color: green;
+}
+
+.result-table td:nth-child(3):contains("A") {
+  color: #6a11cb;
+}
+/* Attendance */
+/* 💜 TITLE */
+h2 {
+  text-align: center;
+  color: #6a11cb;
+  margin-bottom: 20px;
+}
+
+/* 📊 TABLE */
+.attendance-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.2);
+}
+
+/* 💜 HEADER */
+.attendance-table thead tr th {
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+  padding: 14px;
+}
+
+/* 📄 BODY */
+.attendance-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ✨ HOVER */
+.attendance-table tbody tr:hover {
+  background: #f3e8ff;
+}
+
+/* 🎯 SELECT */
+.attendance-table select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* 🔘 SUBMIT BUTTON */
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🔥 HOVER */
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(106,17,203,0.3);
+}
+/* 🟢 STATUS COLORS */
+.present {
+  color: green;
+  font-weight: bold;
+}
+
+.absent {
+  color: red;
+  font-weight: bold;
+}
+/* Announcements */
+/* 💜 PAGE TITLE */
+.page-inner h2 {
+  text-align: center;
+  color: #6a11cb;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* 📢 LIST */
+.announcement-list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 💎 CARD */
+.announcement-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(106, 17, 203, 0.15);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✨ TOP GLOW LINE */
+.announcement-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #6a11cb, #d56ddb);
+}
+
+/* 🔥 HOVER */
+.announcement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(106, 17, 203, 0.25);
+}
+
+/* 🎯 TITLE FIX */
+.announcement-card h3 {
+  color: #6a11cb;   /* 💜 FIXED (was blue) */
+  margin-bottom: 8px;
+}
+
+/* 📄 MESSAGE */
+.announcement-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* 📅 DATE */
+.announcement-date {
+  font-size: 12px;
+  color: #777;
+}
+
+/* admin changes */
+/* 💎 FORM CARD */
+.form-card {
+  width: 80%;
+  margin: 25px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(106, 17, 203, 0.15);
+}
+
+/* 💜 FORM TITLE */
+.form-card h3 {
+  color: #6a11cb;
+  margin-bottom: 15px;
+}
+
+/* ✍ INPUTS */
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.form-card input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106,17,203,0.3);
+}
+
+/* 🔘 MAIN BUTTON */
+.form-card button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6a11cb, #d56ddb);
+  color: white;
+  cursor: pointer;
+}
+
+/* ✏ EDIT BUTTON */
+.edit-btn {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* 🔴 DELETE BUTTON */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 📝 LARGE ANNOUNCEMENT BOX */
+.announcement-input {
+  width: 97%;
+  height: 120px;              /* bigger area */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;           /* allow resize */
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* ✨ FOCUS EFFECT */
+.announcement-input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106,17,203,0.3);
+  outline: none;
+}
+
+/* 💜 TITLE INPUT */
+.form-card input {
+  font-size: 14px;
+}
+/* 🔘 ACTIONS */
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ✏ EDIT BUTTON */
+.edit-btn {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 🔴 LOGOUT BUTTON */
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}

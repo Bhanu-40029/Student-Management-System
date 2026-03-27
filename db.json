@@ -1,0 +1,320 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "teacher1",
+      "password": "123",
+      "department": "CSE",
+      "role": "teacher"
+    },
+    {
+      "id": "3",
+      "username": "student1",
+      "password": "123",
+      "role": "student"
+    }
+  ],
+  "students": [
+    {
+      "id": "3",
+      "username": "student1",
+      "name": "Sonsy",
+      "rollNo": "3",
+      "branch": "CSE",
+      "year": "1",
+      "email": "student1@gmail.com",
+      "phone": "9876543210",
+      "address": "Vijayawada, Andhra Pradesh",
+      "dob": "2004-08-20"
+    },
+    {
+      "id": "2",
+      "name": "krishna",
+      "rollNo": "2",
+      "branch": "CSE",
+      "year": "1",
+      "email": "student2@gmail.com",
+      "phone": "9123456780",
+      "address": "Vijayawada, Andhra Pradesh",
+      "dob": "2004-08-20"
+    },
+    {
+      "id": "4e2f",
+      "name": "bhanu",
+      "rollNo": "4",
+      "branch": "ECE",
+      "year": "1"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "username": "teacher1",
+      "name": "Srithar",
+      "department": "CSE",
+      "email": "srithar@college.com",
+      "phone": "9876543210"
+    },
+    {
+      "id": "2cf0",
+      "name": "Anjana ",
+      "department": "CSE"
+    },
+    {
+      "id": "6da5",
+      "name": "Srithar",
+      "department": "CSE"
+    }
+  ],
+  "timetable": [
+    {
+      "id": "1",
+      "day": "Monday",
+      "subject": "Programming in C",
+      "time": "10:00 AM - 11:00 AM",
+      "faculty": "teacher2",
+      "class": "CSE1"
+    },
+    {
+      "id": "2",
+      "day": "Tuesday",
+      "subject": "Mathematics I",
+      "time": "11:00 AM - 12:00 PM",
+      "faculty": "teacher2",
+      "class": "CSE1"
+    },
+    {
+      "id": "3",
+      "day": "Wednesday",
+      "subject": "Digital Electronics",
+      "time": "2:00 PM - 3:00 PM",
+      "faculty": "teacher1",
+      "class": "CSE1"
+    },
+    {
+      "id": "4",
+      "day": "Thursday",
+      "subject": "Engineering Physics",
+      "time": "9:00 AM - 10:00 AM",
+      "faculty": "teacher3",
+      "class": "CSE1"
+    },
+    {
+      "id": "5",
+      "day": "Friday",
+      "subject": "Basic Electrical Engineering",
+      "time": "1:00 PM - 2:00 PM",
+      "faculty": "teacher4",
+      "class": "CSE1"
+    }
+  ],
+  "results": [
+    {
+      "id": "1",
+      "username": "student1",
+      "academicYear": "2025-2026",
+      "semester": "Odd Sem",
+      "unid": "STU001",
+      "name": "Student 1",
+      "registeredCredits": 16,
+      "obtainedCredits": 16,
+      "cumulative": 120,
+      "sgpa": 9.2,
+      "subjects": [
+        {
+          "code": "CS101",
+          "name": "Fundamentals of Programming",
+          "grade": "O",
+          "gradePoint": 10,
+          "credits": 4,
+          "promotion": "P"
+        },
+        {
+          "code": "EC201",
+          "name": "Digital Electronics",
+          "grade": "A",
+          "gradePoint": 9,
+          "credits": 3,
+          "promotion": "P"
+        },
+        {
+          "code": "MA301",
+          "name": "Discrete Mathematics",
+          "grade": "A",
+          "gradePoint": 9,
+          "credits": 4,
+          "promotion": "P"
+        }
+      ]
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "studentId": "3",
+      "course": "Data Structures",
+      "status": "Present",
+      "date": "2026-02-26"
+    },
+    {
+      "id": "2",
+      "studentId": "3",
+      "course": "Data Structures",
+      "status": "Absent",
+      "date": "2026-02-27"
+    },
+    {
+      "id": "3",
+      "studentId": "3",
+      "course": "DBMS",
+      "status": "Present",
+      "date": "2026-02-26"
+    },
+    {
+      "id": "548f",
+      "studentId": "3",
+      "course": "General",
+      "status": "Present",
+      "date": "2026-03-27"
+    },
+    {
+      "id": "b961",
+      "studentId": "2",
+      "course": "General",
+      "status": "Absent",
+      "date": "2026-03-27"
+    },
+    {
+      "id": "210b",
+      "studentId": "3",
+      "course": "General",
+      "status": "Present",
+      "date": "2026-03-27"
+    },
+    {
+      "id": "544d",
+      "studentId": "2",
+      "course": "General",
+      "status": "Absent",
+      "date": "2026-03-27"
+    },
+    {
+      "id": "9eb2",
+      "studentId": "3",
+      "course": "General",
+      "status": "Absent",
+      "date": "2026-03-27"
+    },
+    {
+      "id": "207c",
+      "studentId": "2",
+      "course": "General",
+      "status": "Absent",
+      "date": "2026-03-27"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "1",
+      "title": "Test",
+      "message": "Hello teachers"
+    }
+  ],
+  "courses": [
+    {
+      "id": "C101",
+      "name": "Digital Signal Processing",
+      "credits": 4,
+      "faculty": "teacher1",
+      "branch": "ECE",
+      "year": "3"
+    },
+    {
+      "id": "C102",
+      "name": "Communication Systems",
+      "credits": 3,
+      "faculty": "teacher1",
+      "branch": "ECE",
+      "year": "3"
+    },
+    {
+      "id": "C103",
+      "name": "Microprocessors and Microcontrollers",
+      "credits": 4,
+      "faculty": "teacher1",
+      "branch": "ECE",
+      "year": "2"
+    },
+    {
+      "id": "C201",
+      "name": "Data Structures",
+      "credits": 4,
+      "faculty": "teacher2",
+      "branch": "CSE",
+      "year": "2"
+    },
+    {
+      "id": "C202",
+      "name": "Database Management Systems",
+      "credits": 3,
+      "faculty": "teacher2",
+      "branch": "CSE",
+      "year": "3"
+    },
+    {
+      "id": "C203",
+      "name": "Operating Systems",
+      "credits": 4,
+      "faculty": "teacher2",
+      "branch": "CSE",
+      "year": "3"
+    },
+    {
+      "id": "C301",
+      "name": "Thermodynamics",
+      "credits": 4,
+      "faculty": "teacher3",
+      "branch": "MECH",
+      "year": "2"
+    },
+    {
+      "id": "C302",
+      "name": "Fluid Mechanics",
+      "credits": 3,
+      "faculty": "teacher3",
+      "branch": "MECH",
+      "year": "3"
+    },
+    {
+      "id": "C401",
+      "name": "Structural Analysis",
+      "credits": 4,
+      "faculty": "teacher4",
+      "branch": "CIVIL",
+      "year": "3"
+    },
+    {
+      "id": "C501",
+      "name": "Power Systems",
+      "credits": 4,
+      "faculty": "teacher5",
+      "branch": "EEE",
+      "year": "3"
+    },
+    {
+      "id": "C601",
+      "name": "Frontend frame work with UI",
+      "credits": 2,
+      "faculty": "Srithar ",
+      "branch": "CSE",
+      "year": "2"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

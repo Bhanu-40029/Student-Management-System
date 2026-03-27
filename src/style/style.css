@@ -1,0 +1,636 @@
+/* ================= HEADER ================= */
+.header {
+  height: 100px;
+  background-color: #2563eb;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-user {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  height: 50px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ================= MAIN BODY ================= */
+.app-body {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  min-height: calc(100vh - 150px);
+  background: #f8fafc;
+}
+
+/* ================= SIDEBAR ================= */
+.student-sidebar {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  bottom: 50px;
+  width: 220px;
+  background: #f1f5f9;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.student-sidebar a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  display: block;
+}
+
+.student-sidebar a:hover {
+  background: #e2e8f0;
+}
+
+/* ================= PAGE CONTENT ================= */
+.page-content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+}
+
+.page-inner {
+  width: 100%;
+  max-width: 800px;          /* controls width of content */
+}
+
+/* ================= LOGIN ================= */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-card {
+  width: 320px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================= DASHBOARD ================= */
+.welcome-box {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.announcement-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ================= PROFILE ================= */
+.profile-container {
+  width: 100%;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.page-content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-inner {
+  width: 100%;
+  max-width: 900px;
+}
+
+
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.timetable-table th,
+.timetable-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.timetable-table th {
+  background: #2563eb;
+  color: white;
+}
+.result-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-info p {
+  margin: 5px 0;
+}
+
+.result-cards {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.result-card {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.result-card span {
+  background: #2563eb;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.sgpa-box {
+  display: inline-block;
+  background: #15803d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.result-table th {
+  background: #0284c7;
+  color: white;
+}
+.attendance-overall {
+  background: #2563eb;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.attendance-table th {
+  background: #0284c7;
+  color: white;
+}
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.announcement-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.announcement-card h3 {
+  color: #2563eb;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.admin-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* PAGE WRAPPER */
+.page-inner {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+/* ADMIN FORM CARD */
+.admin-form {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+.admin-form input,
+.admin-form textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* BUTTON */
+.admin-form button {
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.admin-form button:hover {
+  background: #1d4ed8;
+}
+
+/* CONTENT WRAPPER (CENTER ALIGN) */
+.page-inner {
+  
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;   /* centers content */
+  padding: 20px;         /* 👈 controls width */
+}
+
+/* CENTER TITLE */
+.page-inner h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.data-table th {
+  background: #2563eb;
+  color: white;
+}
+
+/* ================= ADMIN FORM ================= */
+.admin-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.admin-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-form button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= BUTTON ================= */
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= DASHBOARD CARDS ================= */
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ================= PROFILE ================= */
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+.profile-enhanced {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Avatar Circle */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Details */
+.profile-details {
+  margin-bottom: 15px;
+}
+
+.profile-details p {
+  margin: 6px 0;
+}
+
+/* Buttons */
+.profile-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* //teacher profile */
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-grid div {
+  padding: 10px;
+  background: #f4f6fb;
+  border-radius: 6px;
+}
+.dashboard-container {
+  padding: 20px;
+}
+
+.welcome-box {
+  background: #1f3c88;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.announcement-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+.logout-btn {
+  margin-left: 12px;
+  padding: 6px 12px;
+  border: none;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #d9363e;
+}
