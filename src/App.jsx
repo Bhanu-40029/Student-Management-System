@@ -28,7 +28,6 @@ import TeacherProfile from "./teacher/TeacherProfile";
 import TeacherAssignments from "./teacher/TeacherAssignments";
 import TeacherResults from "./teacher/TeacherResults";
 import TeacherAnnouncements from "./teacher/TeacherAnnouncements";
-import TeacherTimetable from "./teacher/TeacherTimetable";
 import AdminAddCourse from "./admin/AdminAddCourse";
 import AdminViewCourses from "./admin/AdminViewCourses";
 import StudentCourseRegistration from "./student module/StudentCourseRegistration";
