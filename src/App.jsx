@@ -32,6 +32,7 @@ import TeacherTimetable from "./teacher/TeacherTimetable";
 import AdminAddCourse from "./admin/AdminAddCourse";
 import AdminViewCourses from "./admin/AdminViewCourses";
 import StudentCourseRegistration from "./student module/StudentCourseRegistration";
+import TeacherTimeTable from "./teacher/TeacherTimetable";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -102,7 +103,7 @@ function App() {
         {/* ================= TEACHER ================= */}
         <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
         <Route path="/teacher/profile" element={<TeacherProfile />} />
-        <Route path="/teacher/timetable" element={<TeacherTimetable user={user} />}
+        <Route path="/teacher/timetable" element={<TeacherTimeTable user={user} />}
 />
         <Route path="/teacher/students" element={<TeacherStudents />} />
 
