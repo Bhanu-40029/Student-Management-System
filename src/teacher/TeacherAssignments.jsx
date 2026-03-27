@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TeacherLayout from "./TeacherLayout";
 import "../style/style1.css";
+import API from "../auth/api";
 function TeacherAssignments({user}){
    const storedUser = JSON.parse(localStorage.getItem("user"));
   const currentUser = user || storedUser;
