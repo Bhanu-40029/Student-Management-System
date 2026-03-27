@@ -22,7 +22,6 @@ import AdminProfile from "./admin/AdminProfile";
 
 /* Teacher */
 import TeacherDashboard from "./teacher/TeacherDashboard";
-import TeacherTimeTable from "./teacher/TeacherTimetable";
 import TeacherStudents from "./teacher/TeacherStudents";
 import TeacherAttendance from "./teacher/TeacherAttendance";
 import TeacherProfile from "./teacher/TeacherProfile";
